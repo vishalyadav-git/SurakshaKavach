@@ -1,105 +1,163 @@
-# React
+🛡️ Suraksha Kavach
+A Smart Multi-Hazard Reporting & Real-Time Alert Platform
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+Suraksha Kavach is a crowdsourced disaster and civic hazard reporting system that enables citizens to instantly report dangers such as floods, open electric wires, waterlogging, landslides, potholes, earthquakes, fires, and more.
 
-## 🚀 Features
+The platform provides:
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+📍 Real-time Hazard Mapping
 
-## 📋 Prerequisites
+🚨 Instant Safety Alerts
 
-- Node.js (v14.x or higher)
-- npm or yarn
+🏛️ Authority Dashboard for Quick Response
 
-## 🛠️ Installation
+🌧️ Live Weather & Disaster Feeds
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+🌐 Community-driven Safety Intelligence
 
-## 📁 Project Structure
+This system helps prevent injuries, save lives, and support authorities in managing both natural disasters and civic risks more effectively.
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
+🚀 Features
+👤 Citizen Mobile App
 
-## 🧩 Adding Routes
+Report hazards with photo, GPS location, and description
 
-To add new routes to the application, update the `Routes.jsx` file:
+Auto-detects location
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+Real-time alerts for nearby hazards
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+View hazard map and safe routes
 
-  return element;
-};
-```
+🏛️ Authority Dashboard (Web)
 
-## 🎨 Styling
+Monitor all incoming hazard reports
 
-This project uses Tailwind CSS for styling. The configuration includes:
+Verify and update status (Pending, In Progress, Resolved)
 
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
+Heatmaps & analytics
 
-## 📱 Responsive Design
+Disaster pattern analysis
 
-The app is built with responsive design using Tailwind CSS breakpoints.
+📍 Hazard Classification
+
+Supports reporting for:
+
+Floods
+
+Waterlogging
+
+Open live wires
+
+Road potholes
+
+Fires
+
+Earthquakes
+
+Landslides
+
+Cyclones
+
+Ocean hazards (future integration)
+
+📡 Real-Time External Data APIs
+
+Weather API (rainfall, flood alert)
+
+Earthquake API (IMD/USGS live feed)
+
+INCOIS ocean alert feed
+
+Cyclone path tracking
+
+Pollution & air quality (future)
+
+🔔 Notification System
+
+Push notifications using Firebase
+
+SMS alerts using Twilio / Fast2SMS
+
+Real-time browser alerts (Socket.io)
+
+🎨 Modern UI / UX
+
+Built with:
+
+TailwindCSS
+
+ShadCN UI
+
+Responsive design
+
+Smooth animations (Framer Motion)
+
+🧰 Tech Stack
+Frontend (Web + Mobile)
+
+React.js
+
+React Native (future)
+
+Vite
+
+TailwindCSS
+
+Recharts / D3.js
+
+Google Maps API
+
+Backend (upcoming)
+
+Node.js + Express.js
+
+MongoDB Atlas
+
+Cloudinary (image upload)
+
+Firebase Cloud Messaging
+
+Socket.io
+
+APIs Integrated
+
+OpenWeatherMap / IMD
+
+USGS Earthquake API
+
+INCOIS Ocean Alerts
+
+Google Maps Geocoding
+
+Twilio / FCM Notifications
+
+🗂️ Project Structure
+SurakshaKavach/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── utils/
+│   ├── assets/
+│   └── App.jsx
+│
+│── public/
+│── package.json
+│── README.md
+│── vite.config.mjs
+│── tailwind.config.js
+
+📦 Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/vishalyadav-git/SurakshaKavach.git
+cd SurakshaKavach
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the project
+npm start
 
 
-## 📦 Deployment
+Your app will run on something like:
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-## 🙏 Acknowledgments
-
--
-- Powered by React and Vite
-- Styled with Tailwind CSS
+👉 http://localhost:4028/
